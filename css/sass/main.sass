@@ -1,0 +1,265 @@
+@import "bourbon/bourbon"
+
+$text-color: #3D3C3F
+$green-color: #00A551
+$orange-color: #E75700
+$blue-color: #77AEE3
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	color: $text-color
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	width: 980px
+	margin: 0 auto
+
+	padding:0 26px 0 54px 
+
+h1, h2, h3, h4
+	text-transform: uppercase
+
+header
+	margin-bottom: 7px
+	.logo
+		float: left
+		margin-left: 12px
+	.f_menu
+		margin-left: 143px
+	h2
+		color: $green-color
+		font-size: 26px
+		margin: 0 0 18px 0
+		padding-top: 13px
+	ul 
+		margin-bottom: 11px
+		padding-left: 0
+		li
+			display: inline-block
+			margin-right: 11px
+	a
+		text-decoration: none
+		text-transform: uppercase
+		font-family: "RobotoBold",serif
+		font-size: 15.5px
+		color: $text-color
+		&:hover
+				color: $green-color
+				border-bottom: 4px solid $green-color
+				text-decoration: none
+	h1
+		font-weight: normal
+		font-size: 49px
+		line-height: 35px
+		padding-top: 12px
+
+	.f_items
+		display: inline-block
+		margin-left: 158px	
+		.item
+			display: inline-block
+		h4
+			display: inline-block
+			font-size: 16px
+			line-height: 16px
+			color: $green-color
+			font-weight: normal
+		img
+			margin: 0 10px 0 20px
+			&:first-child
+				margin-bottom: 7px
+.s_form
+	background-image: url("/img/s_form_bg.png")		
+	background-repeat: repeat-x
+	height: 470px
+	position: relative
+	img
+		position: absolute
+		right: 10px
+		bottom: 0
+
+	form
+		width: 280px
+		background-color: #FFF
+		padding: 20px 23px 16px 17px
+		margin: 34px
+		position: absolute
+		h2
+			font-size: 20px
+			line-height: 15px
+			&:first-child
+				color: $green-color
+				margin:0
+			&:nth-child(2)
+				color: $orange-color
+				margin: 5px 0 17px 0
+		label
+			display: block
+			font-size: 12px
+			font-family: "RobotoBold",serif
+			line-height: 29px
+		input
+			display: block
+			height: 32px
+			width: 100%
+			margin-bottom: 19px
+			background-image: url("/img/arrow.png") 
+			background-repeat: no-repeat
+			background-position: right top
+		.star
+			background: none
+		.button_wrap
+			text-align: center
+			.button 
+				border: none
+				cursor: pointer
+				display: inline-block
+				height: 50px
+				line-height: 50px
+				background-color: $orange-color
+				text-align: center
+				border-radius: 1px
+				color: #fff
+				font-size: 16px
+				font-family: "RobotoBold",sans-serif
+				padding: 0 48px 0 40px
+.s_profi
+	background-color: $blue-color
+	color: #fff
+	font-family: "RobotoBold",sans-serif
+	font-style: italic
+	padding: 26px 40px 33px 50px
+	.items
+		position: relative
+		display: inline-block
+		margin-right: 77px
+		&:nth-child(4)
+			margin-right: 0
+			.item
+				width: 154px
+		.item
+			display: inline-block 
+			width: 135px
+			text-align: center
+			p
+				margin:12px 0 0 0
+	.arrow
+		display: inline-block
+		position: absolute
+		top: 12px
+		left: 160px
+	
+.s_work
+	padding: 32px 0 44px	0
+	h2
+		font-size: 28px
+		line-height: 28px
+		margin-top: 0
+		text-align-last: center
+	.advantages
+		margin-top: 28px
+		position: relative
+	ul
+		display: inline-block
+		list-style-type: none
+		text-align: left
+		&:nth-child(3)
+			top: 14px
+		li
+		//Зададим вместо маркера - тире для списков
+		& :before
+			content: "- "
+		
+.s_services
+	background-color: #ccc
+	padding: 42px 0 24px 40px
+	.items
+		display: inline-block
+		margin-bottom: 13px
+		vertical-align: top
+		&:nth-child(2n)
+			margin-left: 22px
+		.item
+			display: inline-block
+			width: 285px
+			margin-left: 10px
+			
+	h4
+		text-transform: none
+		font-size: 21px
+		line-height: 21px
+		margin: 11px 0 19px 0
+		font-weight: normal
+	p
+		font-family: "RobotoBold",sans-serif
+		font-weight: normal
+	img
+		vertical-align: top
+
+.s_feedback
+	padding: 75px 0
+	font-size: 22px
+	text-align: center
+	line-height: 28px
+	h2
+		margin-top: 0
+	form
+		text-align: left
+		display: inline-block
+		margin-top: 6px
+		span
+			font-family: "RobotoBold",sans-serif
+			font-size: 16px
+			line-height: 16px
+
+		textarea
+			display: block
+			width: 500px
+			height: 170px	
+			font-size: 12px
+			line-height: 12px
+			margin: 4px 0 11px 0
+			text-indent: 10px
+		.button
+			font-size: 11px
+			line-height: 10px
+			height: 18px
+			border-radius: 3px
+			background-color: #FFF
+			box-shadow: 0px -7px 5px rgba(0,0,0,.18) inset
+			border: 1px solid #9C9C9C
+	.button_wrap
+		text-align: center
+	.button
+		&.btn
+			border: none
+			cursor: pointer
+			display: inline-block
+			height: 54px
+			width: 260px
+			line-height: 50px
+			background-color: $orange-color
+			text-align: center
+			border-radius: 1px
+			color: #fff
+			font-size: 16px
+			font-family: "RobotoBold",sans-serif
+			padding: 0 48px 0 40px
+			box-shadow: none
+			margin: 40px 0 380px 0
+
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
